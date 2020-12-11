@@ -81,4 +81,4 @@ collections:
 markdown: kramdown
 
 
-staticman: https://askmath-staticman.herokuapp.com/v3/entry/askmath/questions/master/questions
+staticman: https://askmath-staticman.herokuapp.com/v2/entry/askmath/questions/master/questions

@@ -13,12 +13,19 @@ Don't worry too much about formatting and phrasing and remember there's no such 
 
 
 
-<form id="form_9466" method="post" action="https://askmath-staticman.herokuapp.com/v2/entry/askmath/questions/main/questions">
+<form  method="post" action="https://askmath-staticman.herokuapp.com/v2/entry/askmath/questions/main/questions">
               
-  <input name="options[redirect]" type="hidden" value="{site.url}">
+  <input name="options[redirect]" type="hidden" value="{{site.url}}">
   <!-- e.g. "2016-01-02-this-is-a-post" -->
+  <input name="options[slug]" type="hidden" value="{{page.slug}}"> 
 
-  <label><textarea name="fields[message]"></textarea>Message</label>
+  <label>Question<textarea name="fields[question]" rows=4  colums=40></textarea></label><br />
+  <label>Topics<input name="fields[tags]" type="text"></label><br />
+
+    <label>Name<input name="fields[name]" type="text"></label><br />
+  <label>Email<input name="fields[email]" type="text"></label><br />
   
   <button type="submit">Go!</button>
+
+
 </form>
