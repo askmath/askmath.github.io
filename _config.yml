@@ -79,3 +79,7 @@ collections:
 
 # Build settings
 markdown: kramdown
+
+
+staticman:
+    api: https://https://askmath-staticman.herokuapp.com/v3/entry/askmath/questions/master/questions
