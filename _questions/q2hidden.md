@@ -1,7 +1,7 @@
 ---
 layout: post
 question: Is math discovered or invented?
-snippet:
+snippet: 
 asked_by: Zach S.
 answered_by: 
 date: 12-10-2020
