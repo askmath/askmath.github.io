@@ -9,7 +9,7 @@ name: askmath
 description: 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: 
+avatar: https://askmath.github.io/images/avatar.png
 
 #
 # Flags below are optional
@@ -75,3 +75,6 @@ exclude:
 collections:
     questions:
       output: true
+
+# Build settings
+markdown: kramdown
