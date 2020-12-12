@@ -4,7 +4,7 @@ layout: home
 
 <div class="posts clearfix">
   {% for question in site.questions %}
-  {% if question.snippet.size > 2 %}
+  {% if question.snippet.size > 1 %}
     <article class="post">    
       <div class="eyebrow">{{ question.date | date: '%B %d, %Y' }}</div>
       <h1><a href="{{ question.url | relative_url }}">{{ question.question }}</a></h1>
