@@ -7,14 +7,14 @@ layout: home
   {% if question.snippet.size > 2 %}
     <article class="post">    
       <div class="eyebrow">{{ question.date | date: '%B %d, %Y' }}</div>
-      <h1><a href="{{ site.baseurl }}{{ question.url }}">{{ question.question }}</a></h1>
+      <h1><a href="{{ question.url | relative_url }}">{{ question.question }}</a></h1>
 
       <div class="entry">
       	<p>{{ question.snippet }}</p>
 
 <!--         {{ post.content | truncatewords:40}}
  -->  </div>
-      <a href="{{ site.baseurl }}{{ question.url }}" class="small-link">Read more</a>
+      <a href="{{ question.url | relative_url }}" class="small-link">Read more</a>
     </article>
   {% endif %}
   {% endfor %}

@@ -75,7 +75,7 @@ exclude:
 collections:
     questions:
       output: true
-      permalink: /:collection/:slug
+      permalink: /:collection/:title
 
 # Build settings
 markdown: kramdown

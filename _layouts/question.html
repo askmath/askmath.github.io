@@ -1,0 +1,13 @@
+---
+layout: default
+mathjax: true
+---
+{% include mathjax.html %}
+<article class="post">
+  <h1>{{ page.question }}</h1>
+  <div class="date">{{ page.date | date: '%B %d, %Y'}}</div>
+  <div class="entry">
+    {{ content }}
+  </div>
+
+</article>
