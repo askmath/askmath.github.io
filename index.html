@@ -4,7 +4,7 @@ layout: home
 
 <div class="posts clearfix">
   {% for question in site.questions %}
-  {% if question.snippet.size > 1 %}
+  {% if question.snippet %}
     <article class="post">    
       <div class="eyebrow">{{ question.date | date: '%B %d, %Y' }}</div>
       <h1><a href="{{ question.url | relative_url }}">{{ question.question }}</a></h1>
@@ -12,11 +12,12 @@ layout: home
       <div class="entry">
       	<p>{{ question.snippet }}</p>
 
+
 <!--         {{ post.content | truncatewords:40}}
  -->  </div>
       <a href="{{ question.url | relative_url }}" class="small-link">Read more</a>
     </article>
-  {% endif %}
+    {% endif %}
   {% endfor %}
 
 </div>
