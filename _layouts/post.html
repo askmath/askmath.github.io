@@ -5,6 +5,9 @@ mathjax: true
 {% include mathjax.html %}
 <article class="post">
   <h1>{{ page.question }}</h1>
+  <p> {% for tag in page.tags %}
+    "{{ tag }} "
+    {% endfor %}
   <div class="date">{{ page.date | date: '%B %d, %Y'}}</div>
   <div class="entry">
     {{ content }}

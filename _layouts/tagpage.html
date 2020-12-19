@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="post">
+<h1>Tag: {{ page.tag }}</h1>
+<ul>
+{% for question in site.questions %}
+{% if question.tags contains page.tag %}
+
+  <li><a href="{{ question.url }}">{{ question.question }}</a> ({{ question.date | date_to_string }})<br>
+    {{ question.snippet }}
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
+</div>
+<hr>

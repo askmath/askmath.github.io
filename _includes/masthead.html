@@ -1,12 +1,31 @@
+{% include tags.html %}
+
+{{ tags }}
+
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" alt="{{ site.name }}" /></a>
 
           <nav>
+            <div class="dropdown">
+              <span> Q & A Tags </span>
+              <div class="dropdown-content">
+                {% for t  in tags %}
+                  <a href="{{site.baseurl}}/tag/{{t}}">{{t}}</a>
+                {% endfor %}
+              </div>
+            </div>
+
+
+
+
+
+
+
             <a href="{{site.baseurl}}/ask">Ask a question</a>
             <a href="{{ site.baseurl }}">About</a>
           </nav>
-        </header>
+        </header> 
       </div>
     </div>

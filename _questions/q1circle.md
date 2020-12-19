@@ -6,6 +6,7 @@ asked_by: Anonymous
 answered_by: Zach S. (BA Math, Economics)
 date: '2020-08-16'
 slug: what-is-one-d-circle
+tags: geometry algebra 
 ---
 
 ### What is a circle?
