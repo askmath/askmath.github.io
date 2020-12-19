@@ -2,9 +2,9 @@
 {% for question in site.questions %}
 
   {% assign ttags = question.tags | join:'|' | append:'|' %}
-
   {% assign rawtags = rawtags | append:ttags %}
 {% endfor %}
+
 {% assign rawtags = rawtags | split:'|' | sort %}
 
 {% assign site.tags = "" %}

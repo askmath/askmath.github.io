@@ -7,23 +7,22 @@
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" alt="{{ site.name }}" /></a>
 
           <nav>
+            
             <div class="dropdown">
-              <span> Q & A Tags </span>
+              <a>Q & A Tags</a>
               <div class="dropdown-content">
                 {% for t  in tags %}
-                  <a href="{{site.baseurl}}/tag/{{t}}">{{t}}</a>
+                  <a href="{{site.baseurl}}/tag/{{t}}">{{t | replace: "-", "&nbsp;"}}</a>
                 {% endfor %}
               </div>
             </div>
-
+          
             <a href="{{site.baseurl}}/ask">Ask a question</a>
             <a href="{{ site.baseurl }}">About</a>
 
-
-  <a href="{{site.baseurl}}/search">
-      search
-    </a>
-
+            
+           <a href="{{site.baseurl}}/search">search</a>
+            
 
 
 
