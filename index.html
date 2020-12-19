@@ -16,6 +16,9 @@ layout: home
 <!--         {{ post.content | truncatewords:40}}
  -->  </div>
       <a href="{{ question.url | relative_url }}" class="small-link">Read more</a>
+      {% for tag in question.tags %}
+        <a  href="{{site.base_url}}/tags/{{tag}}"> {{tag | replace: "-", " "}} </a>
+      {% endfor %}
     </article>
     {% endif %}
   {% endfor %}
