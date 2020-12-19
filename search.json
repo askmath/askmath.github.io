@@ -1,0 +1,17 @@
+---
+---
+[
+  {% for question in site.questions %}
+    {
+
+      "title"    : "{{ question.question | strip_html | escape }}",
+      "url"      : "{{ site.baseurl }}{{ question.url }}",
+      "category" : "{{question.categories | join: ', '}}",
+      "tags"     : "{{ question.tags | join: ', ' }}",
+      "date"     : "{{ question.date | date_to_long_string}}",
+      "snippet" : "{{question.snippet | strip_html | strip_newlines | escape }}",
+      "authors" : "{{question.answered_by | strip_html | strip_newlines | escape }}"
+
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
