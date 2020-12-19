@@ -14,33 +14,29 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
+# This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
       - name: setup-python
         uses: actions/setup-python@v2
-          with:
-            python-version: 3.7
+        with:
+          python-version: 3.7
       - name: run-python
         run: |
-          python .github/build_tag_pages.py
-          
-       - name: push
-          uses: github-actions-x/commit@v2.7
-          with:
-            github-token: ${{ secrets.PERSONAL_TOKEN }}
-            push-branch: 'master'
-            commit-message: 'rebuild tag pages'
-            force-add: 'true'
-            files: tag/
-            name: zach-web-bot
-            email: zschutzman@gmail.com
+          python .github/test_action.py
+      - name: push
+        uses: github-actions-x/commit@v2.7
+        with:
+          github-token: ${{ secrets.PERSONAL_TOKEN }}
+          push-branch: 'master'
+          commit-message: 'rebuild tag pages'
+          force-add: 'true'
+          files: tag/
+          name: zach-web-bot
+          email: zschutzman@gmail.com
             
