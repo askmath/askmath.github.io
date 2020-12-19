@@ -28,7 +28,7 @@ jobs:
           python-version: 3.7
       - name: run-python
         run: |
-          python .github/test_action.py
+          python .github/build_tag_pages.py
       - name: push
         uses: github-actions-x/commit@v2.7
         with:
