@@ -9,24 +9,22 @@
           <nav>
             
             <div class="dropdown">
-              <a>Q & A Tags</a>
+              <a>tags</a>
               <div class="dropdown-content">
+                
                 {% for t  in tags %}
-                  <a href="{{site.baseurl}}/tag/{{t}}">{{t | replace: "-", "&nbsp;"}}</a>
+                {% if t.size > 1 %}
+                   <a href="{{site.baseurl}}/tag/{{t}}">{{t | replace: "-", "&nbsp;"}}</a>
+                   {% endif %}
                 {% endfor %}
+              
               </div>
             </div>
           
-            <a href="{{site.baseurl}}/ask">Ask a question</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-
-            
+            <a href="{{site.baseurl}}/ask"><u>ask a question</u></a>
+            <a href="{{ site.baseurl }}/about">about</a>
            <a href="{{site.baseurl}}/search">search</a>
             
-
-
-
-
           </nav>
         </header> 
       </div>
