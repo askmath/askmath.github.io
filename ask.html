@@ -22,6 +22,7 @@ Don't worry too much about formatting and phrasing and remember there's no such 
     <li>
         <label>What's your question? <span class="required">*</span></label>
         <textarea name="fields[question]" class="field-long field-textarea"></textarea>
+         <input type="hidden" name="fields[date]" value="{{site.time | date: '%Y-%m-%d'}}"> 
     </li>
 
     <li>
