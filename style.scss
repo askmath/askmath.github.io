@@ -261,10 +261,10 @@ img {
 
 .site-avatar {
   float: left;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  //height: 50px;
   margin-right: 15px;
-  margin-bottom: 15px;
+  margin-top: 15px;
   @include mobile {
     float: none;
     display: block;
@@ -272,7 +272,7 @@ img {
   }
 
   img {
-    border-radius: 10px;
+    //border-radius: 10px;
   }
 }
 
