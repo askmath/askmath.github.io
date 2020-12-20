@@ -5,9 +5,10 @@ mathjax: true
 {% include mathjax.html %}
 <article class="post">
   <h1>{{ page.question }}</h1>
-  <p> {% for tag in page.tags %}
-    "{{ tag }} "
+  <div>tagged with: {% for tag in page.tags %}
+    <a href = "{{site.base_url}}/tag/{{tag}}"> {{ tag | replace: "-", " " }}
     {% endfor %}
+</div>
   <div class="date">{{ page.date | date: '%B %d, %Y'}}</div>
   <div class="entry">
     {{ content }}
