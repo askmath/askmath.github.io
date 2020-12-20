@@ -19,10 +19,11 @@ Don't worry too much about formatting and phrasing and remember there's no such 
 <form method="post" action="https://askmath-staticman.herokuapp.com/v2/entry/askmath/questions/main/questions">
 <ul class="form-style-1">
   <input name="options[redirect]" type="hidden" value="{{site.url}}">
+           <input type="hidden" name="fields[date]" value="{{site.time | date: '%Y-%m-%d'}}"> 
+         <input type="hidden" name="fields[tags]" value=" "> 
     <li>
         <label>What's your question? <span class="required">*</span></label>
         <textarea name="fields[question]" class="field-long field-textarea"></textarea>
-         <input type="hidden" name="fields[date]" value="{{site.time | date: '%Y-%m-%d'}}"> 
     </li>
 
     <li>
