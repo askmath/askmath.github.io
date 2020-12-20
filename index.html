@@ -5,7 +5,7 @@ layout: home
 <div class="posts clearfix">
   {% for question in site.questions %}
   {% if question.snippet %}
-    <article class="post">    
+    <article class="post" style="position:relative;">    
       <div class="eyebrow">{{ question.date | date: '%B %d, %Y' }}</div>
       <h1><a href="{{ question.url | relative_url }}">{{ question.question }}</a></h1>
 
@@ -16,9 +16,16 @@ layout: home
 <!--         {{ post.content | truncatewords:40}}
  -->  </div>
       <a href="{{ question.url | relative_url }}" class="small-link">Read more</a>
+      {% if question.tags.size > 0 %}
+
+      <div style="position:absolute; bottom:0">
+        tags: 
       {% for tag in question.tags %}
-        <a  href="{{site.base_url}}/tags/{{tag}}"> {{tag | replace: "-", " "}}{% unless forloop.last %},{% endunless %} </a>
+        <a  href="{{site.base_url}}/tags/{{tag}}"> {{tag | replace: "-", " "}}</a>{% unless forloop.last %},{% endunless %} 
       {% endfor %}
+    </div>
+      {% endif %}
+
     </article>
     {% endif %}
   {% endfor %}
