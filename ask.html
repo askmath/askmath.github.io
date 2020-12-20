@@ -2,6 +2,8 @@
 layout: default
 ---
 
+
+
 <h2> Ask a question</h2>
 
 <p>
@@ -10,21 +12,46 @@ Anything you'd like to ask?
 Your name and email are totally optional. If you give your name, we'll post it with your question when it's answered. Otherwise, feel free to remain anonymous.  Your email address will not be published or even retained, but if you provide one we'll send you a quick message when an answer to your question goes up.
 
 Don't worry too much about formatting and phrasing and remember there's no such thing as a bad question!
+</p>
 
 
 
-<form  method="post" action="https://askmath-staticman.herokuapp.com/v2/entry/askmath/questions/main/questions">
-              
+<form method="post" action="https://askmath-staticman.herokuapp.com/v2/entry/askmath/questions/main/questions">
+<ul class="form-style-1">
   <input name="options[redirect]" type="hidden" value="{{site.url}}">
-  <!-- e.g. "2016-01-02-this-is-a-post" -->
-  <input type="hidden" name="fields[date]" value="{{site.time | date: '%Y-%m-%d'}}"> 
-  <label>Question<textarea name="fields[question]" rows=4  colums=40></textarea></label><br />
-  <label>Topics<input name="fields[tags]" type="text"></label><br />
+    <li>
+        <label>What's your question? <span class="required">*</span></label>
+        <textarea name="fields[question]" class="field-long field-textarea"></textarea>
+    </li>
 
-    <label>Name<input name="fields[asked_by]" type="text"></label><br />
-  <label>Email<input name="fields[email]" type="email"></label><br />
-  
-  <button type="submit">Go!</button>
+    <li>
+        <label>What level answer are you looking for?</label>
+          <label for="eli5"><input type="radio" id="eli5" name="fields[level]" value="explain-like-five">
+          "Explain Like I'm Five" — simple language, minimally technical</label>
+          <label for="highschool"><input type="radio" id="highschool" name="fields[level]" value="highschool">
+          I haven't really seen much math since high school</label>
+          <label for="college"><input type="radio" id="college" name="fields[level]" value="college">
+          I majored in a mathematical field in college</label>
+        <label for="other"><input type="radio" id="other" name="fields[level]" value="other" checked="true">
+          I'm unsure/surprise me</label>
+    </li>
 
 
+    <li>
+    <label>Name </label>
+        <input type="text" name="fields[asked_by]" class="field-long" />
+    </li>
+    <label>Email </label>
+        <input type="text" name="fields[email]" class="field-long" />
+    </li>
+
+    <li>
+        <input type="submit" value="Submit" />
+    </li>
+</ul>
 </form>
+
+
+
+
+
