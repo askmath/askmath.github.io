@@ -3,7 +3,7 @@ layout: home
 ---
 
 <div class="posts clearfix">
-  {% for question in site.questions %}
+  {% for question in site.questions reversed %}
   {% if question.snippet %}
     <article class="post" style="position:relative;">    
       <div class="eyebrow">{{ question.date | date: '%B %d, %Y' }}</div>
@@ -25,7 +25,7 @@ layout: home
       {% endfor %}
     </div>
       {% endif %}
-
+ 
     </article>
     {% endif %}
   {% endfor %}
