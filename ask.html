@@ -4,14 +4,24 @@ layout: default
 
 
 
-<h2> Ask a question</h2>
+<h1> Ask a question</h1>
 
 <p>
-Anything you'd like to ask? 
+Anything you'd like to ask? Don't worry too much about formatting and phrasing; we can take care of that stuff on our end. 
+</p>
+<p>
+If you'd like, you can give us some details about yourself in your question to help add some context and background for why you're asking this question.  A great example of a question is something like
 
-Your name and email are totally optional. If you give your name, we'll post it with your question when it's answered. Otherwise, feel free to remain anonymous.  Your email address will not be published or even retained, but if you provide one we'll send you a quick message when an answer to your question goes up.
+<p style="margin-left:10%;margin-right:10%"><boldcolor2>
+    I'm in the 9th grade and my algebra teacher taught us about factoring quadratic polynomials by completing the square. I can apply the formula, but I don't get why it always finds the right factors. Can you explain how this process works to magically find the factors?
+</boldcolor2></p>
+</p>
+<p>
+We also ask you at what level you'd like the answer. We understand that everyone has a different background and level of comfortability with math, and we want to make sure we're writing for you!
+</p>
+<p>
+Your name and email are totally optional. If you give your name, we'll post it with your question when it's answered, but feel free to remain anonymous if you'd like.  Your email address will not be retained or  published, but if you provide one we'll send you a quick message when an answer to your question goes up.
 
-Don't worry too much about formatting and phrasing and remember there's no such thing as a bad question!
 </p>
 
 
@@ -22,12 +32,12 @@ Don't worry too much about formatting and phrasing and remember there's no such 
            <input type="hidden" name="fields[date]" value="{{site.time | date: '%Y-%m-%d'}}"> 
          <input type="hidden" name="fields[tags]" value=" "> 
     <li>
-        <label>What's your question? <span class="required">*</span></label>
+        <label><boldcolor>What's your question?</boldcolor> <span class="required">*</span></label>
         <textarea name="fields[question]" class="field-long field-textarea"></textarea>
     </li>
 
     <li>
-        <label>What level answer are you looking for?</label>
+        <label><boldcolor>What level answer are you looking for?</boldcolor></label>
           <span for="eli5"><input type="radio" id="eli5" name="fields[level]" value="explain-like-five">
           "Explain Like I'm Five" — simple language, minimally technical</span><br>
           <span for="highschool"><input type="radio" id="highschool" name="fields[level]" value="highschool">
@@ -40,10 +50,10 @@ Don't worry too much about formatting and phrasing and remember there's no such 
 
 
     <li>
-    <label>Name </label>
+    <label><boldcolor>Name</boldcolor> </label>
         <input type="text" name="fields[asked_by]" class="field-long" />
     </li>
-    <label>Email </label>
+    <label><boldcolor>Email</boldcolor> </label>
         <input type="text" name="fields[email]" class="field-long" />
     </li>
 
