@@ -174,7 +174,7 @@ a {
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $themeDarkPrimary;
+    color: $themeDarkSecondary;
   }
 }
 
@@ -428,7 +428,7 @@ footer {
   a {
 
     &:hover {
-        color: $themeLightPrimary;
+        color: $themeDarkSecondary;
       }
   
   }
@@ -459,7 +459,7 @@ footer {
     padding:0px;
     display:block;
     font-weight: bold;
-    
+
 }
 .form-style-1 input[type=text], 
 .form-style-1 input[type=date],
