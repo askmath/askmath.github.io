@@ -82,3 +82,5 @@ markdown: kramdown
 
 
 staticman: https://askmath-staticman.herokuapp.com/v2/entry/askmath/questions/master/questions
+
+future: true
