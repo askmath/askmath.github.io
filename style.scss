@@ -83,7 +83,7 @@ h1 {
   font-weight: 700;
 }
 
-#home h1.site-name {
+h1.site-name {
   font-size: 72px;
   line-height: 74px;
   font-weight: 700;
@@ -114,7 +114,9 @@ h1.question-header {
   }
 }
 
-
+h2.subtitle {
+  color: $themeLightSecondary
+}
 
 p.question-snippet {
   font-size: 30px;
