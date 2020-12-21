@@ -312,7 +312,9 @@ nav {
   margin-top: 23px;
   font-family: $helveticaNeue; 
   font-size: 24px;
-  vertical-align:baseline;
+  position:absolute;
+  bottom: 8px;
+  right: 3px;
   
   @include mobile {
     float: none;
