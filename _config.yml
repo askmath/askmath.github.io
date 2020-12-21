@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: askmath
+name: askmath.org
 
 # Short bio or description (displayed in the header)
 description: questions asked; questions answered
@@ -36,7 +36,7 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: 
+url: "http://askmath.org"
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
