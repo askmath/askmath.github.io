@@ -4,7 +4,7 @@ layout: default
 <div class="post">
 <h1>Tag: {{ page.tag | replace: "-", " "}}</h1>
 <ul>
-{% for question in site.questions %}
+{% for question in site.questions reversed %}
 {% if question.tags contains page.tag %}
 
   <li><a href="{{ question.url }}">{{ question.question }}</a> ({{ question.date | date_to_string }})<br>
