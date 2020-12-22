@@ -20,20 +20,23 @@
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
-
   <body>
-    <div class="content-wrapper">
+<div id="home" class="content-wrapper">
 
-      {% include masthead.html %}
+{% include masthead.html %}
 
-      <div id="main" role="main" class="container">
-        {{ content }}
-      </div>
 
-    </div><!-- /content-wrapper -->
 
-    {% include footer.html %}
 
-    {% include analytics.html %}
-  </body>
+<div id="main" role="main" class="container">
+{{ content }}
+</div>
+
+
+
+       {% include footer.html %}
+{% include analytics.html %}
+</div>
+</body>
+
 </html>

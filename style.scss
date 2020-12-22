@@ -23,7 +23,27 @@ body {
   color: $gray;
   -webkit-font-smoothing: antialiased;
 }
-
+html{
+  position:relative; 
+  min-height: 100%;
+}
+/*Normalize html and body elements,this style is just good to have*/
+html,body{
+  margin:0;
+  padding:0;
+}
+.pageContentWrapper{
+  margin-bottom:100px;/* Height of footer*/
+} 
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    //height:5em;
+    background:#ccc;
+    text-align: right;
+}
 .container {
   margin: 0 auto;
   max-width: 980px;
@@ -253,7 +273,7 @@ img {
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
 .clearfix:after {
-    content: " ";
+    content: "";
     display: table;
 }
 
@@ -265,9 +285,9 @@ img {
 /* LAYOUT / SECTIONS */
 /*********************/
 
-.content-wrapper {
+/*.content-wrapper {
   min-height: 600px;
-}
+}*/
 .masthead {
   padding: 20px 0 0;
   border-bottom: 1px solid $lightGray;

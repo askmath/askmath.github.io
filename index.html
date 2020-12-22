@@ -2,10 +2,10 @@
 layout: home
 ---
 {% include mathjax.html %} 
-<div class="posts clearfix">
+<div class="posts">
   {% for question in site.questions reversed %}
   {% if question.snippet %}
-    <article class="post" style="position:relative;">    
+    <article class="post" >    
       <div class="eyebrow">{{ question.date | date: '%B %d, %Y' }}</div>
       <h1><a href="{{ question.url | relative_url }}">{{ question.question }}</a></h1>
 
@@ -13,12 +13,11 @@ layout: home
       	<p>{{ question.snippet }}</p>
 
 
-<!--         {{ post.content | truncatewords:40}}
- -->  </div>
+      </div>
       <a href="{{ question.url | relative_url }}" class="small-link">Read more</a>
       {% if question.tags.size > 0 %}
 
-      <div style="position:absolute; bottom:0">
+      <div >
         tags: 
       {% for tag in question.tags %}
         <a  href="{{site.base_url}}/tags/{{tag}}"> {{tag | replace: "-", " "}}</a>{% unless forloop.last %},{% endunless %} 
