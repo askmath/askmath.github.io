@@ -82,10 +82,10 @@ markdown: kramdown
 
 
 staticman: https://askmath-staticman.herokuapp.com/v2/entry/askmath/questions/master/questions
-
-recaptcha_secret: uSU+4HChVtskRCVYscHNY1jy/zzmROMfXQhr/jiCw8PrYt65f1ynrA1yx0LkgZlGYtJep+QNvfmVQbb+5HfA8vplEHjhElUEMcQzd5XTWJcaALM2rbgc7Rt5fSaaa+3rZsouauWRB2l6CQQuHb1CIJWUYJvJVDoGFLFSiP8xmCs=
-
 recaptcha_key: 6LdEjBIaAAAAACppJVC2bk9pXDDE2yqa8hbhvwr2
+recaptcha_secret: o0BXpsWypn0rTW6ADFFIwoV0KGyvdAa73Uc4HJF85Z9t5P0DOcz2fkkVuFpPPuLnF5+JKtVJpdt+xIDsk/4a2zy8uwQUGby37JoppSUVtvU6+Y+QnBWMD13tOYkqGfFBqupDy/ymNMRsOmk9ngJvHySJ593TB/cHEBI48tuPr2E=
+
+
 
 
 future: true
