@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+<script src='https://www.google.com/recaptcha/api.js'></script>
 
 
 <h1> Ask a question</h1>
@@ -29,6 +29,8 @@ Your name and email are totally optional. If you give your name, we'll post it w
 <form method="post" action="https://askmath-staticman.herokuapp.com/v2/entry/askmath/questions/main/questions">
 <ul class="form-style-1">
   <input name="options[redirect]" type="hidden" value="{{site.url}}">
+  <input type="hidden" name="options[reCaptcha][siteKey]" value="{{site.recaptcha_key}}">
+<input type="hidden" name="options[reCaptcha][secret]" value="{{site.recaptcha_secret}}">
            <input type="hidden" name="fields[date]" value="{{site.time | date: '%Y-%m-%d'}}"> 
          <input type="hidden" name="fields[tags]" value=" "> 
     <li>
@@ -56,7 +58,7 @@ Your name and email are totally optional. If you give your name, we'll post it w
     <label><boldcolor>Email</boldcolor> </label>
         <input type="text" name="fields[email]" class="field-long" />
     </li>
-
+    <li class="g-recaptcha" data-sitekey="{{site.recaptcha_key}}"></li>
     <li>
         <input type="submit" value="Submit" />
     </li>
