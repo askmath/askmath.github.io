@@ -1,32 +1,32 @@
 {% include tags.html %}
 
 
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-<!--           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" alt="{{ site.name }}" /></a> -->
-        <h1 class="site-name" style="display:inline;font-size:50px"><a href="/">{{ site.name }}</a></h1> <br>
-        <h2 class="subtitle" style="display:inline;font-size:20px">math questions & math answers</h2>
-          <nav>
-            
-            <div class="dropdown">
-              <a href="{{site.baseurl}}/tags">tags</a>
-              <div class="dropdown-content">
-                
-                {% for t  in tags %}
-                {% if t.size > 1 %}
-                   <a href="{{site.baseurl}}/tag/{{t}}">{{t | replace: "-", "&nbsp;"}}</a>
-                   {% endif %}
-                {% endfor %}
-              
-              </div>
-            </div>
-          
-            <a href="{{site.baseurl}}/ask"><u>ask a question</u></a>
-            <a href="{{ site.baseurl }}/about">about</a>
-           <a href="{{site.baseurl}}/search">search</a>
-            
-          </nav>
-        </header> 
-      </div>
-    </div>
+<div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      <!--           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" alt="{{ site.name }}" /></a> -->
+      <h1 class="site-name" style="display:inline;font-size:50px"><a href="/">{{ site.name }}</a></h1> <br>
+      <h2 class="subtitle" style="display:inline;font-size:20px">math questions & math answers</h2>
+      <nav>
+
+
+
+        <a href="{{site.baseurl}}/ask"><u>ask a question</u></a>
+        <a href="{{ site.baseurl }}/about">about</a>
+        <a href="{{site.baseurl}}/search">search</a>
+        <div class="dropdown">
+          <a href="{{site.baseurl}}/tags">tags</a>
+          <div class="dropdown-content">
+
+            {% for t  in tags %}
+            {% if t.size > 1 %}
+            <a href="{{site.baseurl}}/tag/{{t}}">{{t | replace: "-", "&nbsp;"}}</a>
+            {% endif %}
+            {% endfor %}
+
+          </div>
+        </div>
+      </nav>
+    </header> 
+  </div>
+</div>
