@@ -32,7 +32,7 @@ html,body{
   margin:0;
   padding:0;
 }
-.pageContentWrapper{
+.content-wrapper{
   margin-bottom:100px;/* Height of footer*/
 } 
 .footer{
@@ -43,6 +43,7 @@ html,body{
     //height:5em;
     background:#ccc;
     text-align: right;
+    //margin-top: 150px;
 }
 .container {
   margin: 0 auto;
