@@ -83,7 +83,7 @@ markdown: kramdown
 
 staticman: https://askmath-staticman.herokuapp.com/v2/entry/askmath/questions/master/questions
 
-recaptcha_secret: 0TnA2mogX1RGimH9HJdyVDrTX/tPHeqTxn5/hLTom4OIOMPbSX3waoIPKJHcI2AV1zW4j5tFpvKeQTIKUX3hL/JDRwbB/hMh/JANfcIewkzJwsFmsddHLdt6S5UQDTOMesYBAMZGyj1qUsz/vIULE8kcdvWikdxVocAIrd1WET4=
+recaptcha_secret: uSU+4HChVtskRCVYscHNY1jy/zzmROMfXQhr/jiCw8PrYt65f1ynrA1yx0LkgZlGYtJep+QNvfmVQbb+5HfA8vplEHjhElUEMcQzd5XTWJcaALM2rbgc7Rt5fSaaa+3rZsouauWRB2l6CQQuHb1CIJWUYJvJVDoGFLFSiP8xmCs=
 
 recaptcha_key: 6LdEjBIaAAAAACppJVC2bk9pXDDE2yqa8hbhvwr2
 
