@@ -1,17 +1,36 @@
 ---
 layout: default
 ---
-<div class="post">
-<h1>Tag: {{ page.tag | replace: "-", " "}}</h1>
-<ul>
+{% include mathjax.html %} 
+<h2>Posts tagged with: {{ page.tag | replace: "-", " "}}</h2>
+
+<div class="posts">
 {% for question in site.questions reversed %}
 {% if question.tags contains page.tag %}
+  {% if question.snippet %}
+    <article class="post" >    
+      <div class="eyebrow">{{ question.date | date: '%B %d, %Y' }}</div>
+      <h1><a href="{{ question.url | relative_url }}">{{ question.question }}</a></h1>
 
-  <li><a href="{{ question.url }}">{{ question.question }}</a> ({{ question.date | date_to_string }})<br>
-    {{ question.snippet }}
-  </li>
+      <div class="entry">
+        <p>{{ question.snippet }}</p>
+
+
+      </div>
+      <a href="{{ question.url | relative_url }}" class="small-link">Read more</a>
+      {% if question.tags.size > 0 %}
+
+      <div >
+        tags: 
+      {% for tag in question.tags %}
+        <a  href="{{site.base_url}}/tags/{{tag}}"> {{tag | replace: "-", " "}}</a>{% unless forloop.last %},{% endunless %} 
+      {% endfor %}
+    </div>
+      {% endif %}
+ 
+    </article>
+    {% endif %}
   {% endif %}
 {% endfor %}
-</ul>
+
 </div>
-<hr>
