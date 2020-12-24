@@ -2,7 +2,7 @@
 layout: default
 ---
 {% include mathjax.html %} 
-<h2 style="font-size:36px">Posts tagged with: {{ page.tag | replace: "-", " "}}</h2>
+<h2 style="font-size:36px">Posts tagged with: <boldcolor2>{{ page.tag | replace: "-", " "}}</boldcolor2></h2>
 
 <div class="posts">
 {% for question in site.questions reversed %}
