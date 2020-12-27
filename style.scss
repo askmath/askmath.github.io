@@ -569,3 +569,32 @@ select{
 .form-style-1 .required{
     color:red;
 }
+
+
+
+
+figure {
+  text-align: center;
+
+  figcaption {
+    margin-top: 5px;
+    font-style: italic;
+    font-size: 1rem;
+  }
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+/**
+ * Figures
+ */
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: 1rem;
+}
