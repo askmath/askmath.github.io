@@ -575,7 +575,8 @@ select{
 
 figure {
   text-align: center;
-
+  padding-top: 1em;
+  padding-bottom: 1em;
   figcaption {
     margin-top: 5px;
     font-style: italic;
@@ -591,9 +592,9 @@ img {
 /**
  * Figures
  */
-figure > img {
+/*figure > img {
   display: block;
-}
+}*/
 
 figcaption {
   font-size: 1rem;
