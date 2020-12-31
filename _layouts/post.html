@@ -17,6 +17,29 @@ layout: default
     {% endfor %}
 </div>
 {% endif %}
+
+{% if page.asked_by.size > 0 and page.asked_by != "Anonymous" %}
+  <div>asked by {{page.asked_by}}</div>
+  {% else %}
+  <div> asked anonymously </div>
+{% endif %}
+
+
+
+
+{% if page.answered_by.size > 0 %}
+  <div>answered by {% for name in page.answered_by %}
+    {% for person in site.people %}
+        {% if person.name == name %}
+        <a href = "{{person.url}}">{{name}}</a>
+        {% else %}
+        {{name}}{% endif %}{% endfor %}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+</div>
+{% endif %}
+
+
+
   <div class="date">{{ page.date | date: '%B %d, %Y'}}</div>
   <div class="entry">
     {{ content }}
