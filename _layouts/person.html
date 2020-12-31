@@ -15,7 +15,11 @@ layout: default
  <h2> {{page.name}} </h2> 
 
 
-<h3> <color2>{{page.qualifications}}</color2> </h3>
+<p style="margin-top:8px;margin-bottom: 8px"> {{page.qualifications}}</p>
+
+{% if page.website %}
+<a href={{page.website}} > [website] </a>
+{% endif %}
 <br />
 
 <p> {{page.bio}} </p>

@@ -10,7 +10,14 @@ layout: default
     
       <h1 class="question-header">{{ page.question }}</h1>
       <p class="question-snippet">{{ page.snippet }}</p>
-    
+
+
+
+
+
+
+
+  
   {% if page.tags.size > 0 %}
   <div>tagged with: {% for tag in page.tags %}
     <a href = "{{site.base_url}}/tag/{{tag}}"> {{ tag | replace: "-", " " }}</a>{% unless forloop.last %},{% endunless %}
@@ -18,7 +25,7 @@ layout: default
 </div>
 {% endif %}
 
-{% if page.asked_by.size > 0 and page.asked_by != "Anonymous" %}
+{% if page.asked_by.size > 0  %}
   <div>asked by {{page.asked_by}}</div>
   {% else %}
   <div> asked anonymously </div>
@@ -41,6 +48,16 @@ layout: default
 
 
   <div class="date">{{ page.date | date: '%B %d, %Y'}}</div>
+<br />
+{% if page.level %}
+{% for l in site.levels %}
+{% if page.level == l.code %}
+<div><boldcolor2><i> {{l.desc}}</i></boldcolor2> </div>
+{% endif %}
+{% endfor %}
+{% endif %}
+
+
   <div class="entry">
     {{ content }}
   </div>
