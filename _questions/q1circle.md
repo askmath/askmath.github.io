@@ -2,11 +2,12 @@
 layout: post
 question: What is a one-dimensional circle?
 snippet: It's a pair of points!
-asked_by: Anonymous
+asked_by: 
 answered_by: [Zach S, Fake McPerson]
 date: '2020-08-16'
 slug: what-is-one-d-circle
 tags: geometry algebra 
+level: eli5
 ---
 
 ### What is a circle?
