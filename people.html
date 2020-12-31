@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+
+
+
+{% include mathjax.html %}
+
+<h1> Contributors</h1>
+
+
+
+
+{% for person in site.people %}
+
+
+
+{% if person.picture %}
+<div style="float:left;padding-right:25px">
+    <image src="{{site.baseurl}}/images/{{person.picture}}" width="75px"/>
+</div>
+{% endif %}
+ <aprim href="{{person.url}}" style="font-size:24px;font-weight:bold;vertical-align: middle"> {{person.name}}</aprim>
+
+{% if person.website %}
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href={{person.website}} style="font-size:16px;vertical-align:middle" > [website] </a>
+{% endif %}
+<p style="margin-top:8px;margin-bottom: 8px"> {{person.qualifications}}</p>
+
+
+<br />
+
+<!-- <p> {{person.bio}} </p> -->
+
+{% unless forloop.last %}
+<hr style="width:75%;text-align:left;margin-left:0">
+{% endunless %}
+
+{% endfor %}

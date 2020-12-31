@@ -200,6 +200,16 @@ a {
   }
 }
 
+aprim {
+  color: $themeLightPrimary;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover, &:active {
+    color: $themeDarkPrimary;
+  }
+}
+
+
 boldcolor {
   color: $themeLightPrimary;
   text-decoration: none;
