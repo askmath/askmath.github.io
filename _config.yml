@@ -77,6 +77,11 @@ collections:
       output: true
       permalink: /:collection/:title
 
+    people:
+      output: true
+      permalink: /:collection/:name
+
+
 # Build settings
 markdown: kramdown
 

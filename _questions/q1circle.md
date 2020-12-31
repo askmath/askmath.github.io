@@ -3,7 +3,7 @@ layout: post
 question: What is a one-dimensional circle?
 snippet: It's a pair of points!
 asked_by: Anonymous
-answered_by: Zach S. (BA Math, Economics)
+answered_by: [Zach S, Fake McPerson]
 date: '2020-08-16'
 slug: what-is-one-d-circle
 tags: geometry algebra 
